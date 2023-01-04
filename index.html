@@ -1,28 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Filup the pitha form</title>
+    <!-- Internal Css -->
     <style>
-        label{
+        label {
             display: block;
             margin-bottom: 10px;
         }
+        h2{
+            color:pink;
+            font-size: 30px;
+            font-weight: bold;
+            text-align: center;
+        }
     </style>
 </head>
+
 <body>
-    <h2>Welcome to Adil er ammur pitha Ghor</h2>
-    <form action="">  
-       <label for="name">Your Name 
+    <h1>Welcome to Adil er ammur pitha Ghor</h1>
+    <!-- Form of Pitha starts here -->
+    <form action="">
+        <label for="name">Your Name
             <input id="name" type="text" placeholder="Your Name">
         </label>
-        <label for="email">Your Email 
+        <label for="email">Your Email
             <input id="email" type="text" placeholder="Your Email">
         </label>
 
-<!-- starts fieldset -->
+        <!-- starts fieldset -->
         <fieldset>
             <legend>Pick one of Bangladeshi Pitha</legend>
             <label for="chitoi">
@@ -74,6 +84,36 @@
                 Jamai Pitha
             </label>
         </fieldset>
-    
+
+
+
+        <fieldset>
+            <legend>Select One or more Vortas</legend>
+            <label for="sorisa">
+                <input type="checkbox" name="vorta" id="sorisa">Sorisa
+            </label>
+            <label for="shutki">
+                <input type="checkbox" name="vorta" id="shutki">Shutki
+            </label>
+            <label for="dal">
+                <input type="checkbox" name="vorta" id="dal">Dal
+            </label>
+        </fieldset>
+
+
+
+        <fieldset>
+            <legend>Special Instruction</legend>
+            <textarea name="" id="" cols="50" rows="5"
+                placeholder="Hey,there say something...If you Love me or something plz tell me,I never mind!😀😎">
+            </textarea>
+        </fieldset>
+
+        
+        <input type="reset" value="Reset">
+        <input type="button" value="Submit">
+    </form>
+
 </body>
+
 </html>
